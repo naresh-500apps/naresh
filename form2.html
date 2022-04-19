@@ -1,0 +1,17 @@
+<html>
+<body>
+    <h1>Login Form</h1>
+    <form name="myform" onsubmit="naresh()">
+        Full name:<input type="text" name="fname"><br><br>
+        Phone Number:<input type="text" name="pnumber" ><br><br>
+        Email:<input type="text" name="eml" ><br><br>
+        <input type="submit" onclick="naresh()">
+    </form>
+    <script>
+        function naresh() {
+            document.write(document.myform.fname.value + " " + document.myform.pnumber.value + " " + document.myform.eml.value)
+            // document.write(document.myform.fname.value + " " + myfrom.pnumber.value + "" + myform.email.value);
+        }
+   </script>
+</body>
+</html>

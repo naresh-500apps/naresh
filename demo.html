@@ -1,0 +1,35 @@
+<html>
+
+<body>
+
+<h1>This is Fullname</h1>
+
+<p id="demo"></p>
+
+<form onsubmit="myFunction(sample1,sample2)">
+
+<label for="name">lastname:</label>
+
+<input type="text" id="sample1" firstname="name" placeholder="enter name" required><br><br>
+
+<lable for="pwd">lastname:</lable>
+
+<input type="text" id="sample2" lastname="name" placeholder="enter name" required><br><br>
+
+<button type="submit">SUBMIT</button>
+
+</form>
+
+<script>
+
+function myFunction(sample1, sample2) {
+
+document.write(document.getElementById("sample1").value = "full name is " + sample1.value + " " + sample2.value);
+
+}
+
+</script>
+
+</body>
+
+</html>
