@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form align="center">
+        <label>NAME:</label>
+        <input type="text" id="sample1" name="name"><br><br>
+        <label>AGE:</label>
+        <input type="number" id="sample2" name="name"><br><br>
+        <label>EMAIL:</label>
+        <input type="text" id="sample3" name="email"><br><br>
+        <label>CONTACT:</label>
+        <input type="text" id="sample4" name="CONTACT"><br><br>
+        <button type="submit" value="submit" onclick="res()">Submit</button>  
+    </form>
+    <script>
+       function res(){
+        document.write(document.getElementById("sample1").value + document.getElementById("sample2").value + document.getElementById("sample3").value + document.getElementById("sample4").value);
+       }
+    </script>
+</body>
+</html>
