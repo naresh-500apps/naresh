@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>map condition</h1>
+        <button onclick="func()">click me</button>
+    </head>
+</html>
+<script>
+    var values = [ { id: 20, name: 'Captain Piett' }, 
+    { id: 24, name: 'General Veers' }, 
+    { id: 56, name:'Admiral Ozzel' }, 
+    { id: 88, name: 'Commander Jerjerrod' } ];
+    function func(){
+          var value=values.map((x)=>{
+              return x.id
+          })  
+          document.write(value);
+    }
+</script>
