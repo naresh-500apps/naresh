@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 align="center">crud operations</h1>
+</head>
+
+<body>
+    <form>
+        Enter First Name: <input type="text" id="nam1" name="firstname"><br><br>
+        Enter Last Name: <input type="text" id="nam2" name="Lastname"><br><br>
+        <button onclick="add()">Add</button><br><br>
+        <button onclick="num1()">delete</button>
+    </form><br>
+     <table border="5px" width="100" height="100" id="data">        
+         <tr>
+            <th>first name</th>
+            <th>last name</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+<script>
+    function add() {
+        document.write(document.getElementById("nam1").value + "" + document.getElementById("nam2").value);
+    }
+    function num1(){
+        document.write(document.getElementById("data").delete);
+    }
+</script>
+
+</html>

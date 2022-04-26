@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 align="center">reverse condition in alphabetical order</h1>
+    <button onclick="val()">alphabetical method</button><br><br>
+    <button onclick="val1()">reverse method</button><br><br>
+</head>
+
+<body>
+</body>
+<script>
+    var users = [{ name: "500apps", id: 1 },
+    { name: "Technologies", id: 2 },
+    { name: "Agile", id: 3 },
+    { name: "Mantra", id: 4 },
+    { name: "Clockly", id: 5 },
+    { name: "CRM", id: 6 },
+    { name: "500apps", id: 7 }];
+    function val() {
+        var field = 'name';
+        var valid = users.sort((x, y) => (x[field] || "").toString().localeCompare((y[field] || "").toString()));
+        document.write(JSON.stringify(valid))
+    }
+    function val1() {
+        var field = 'name';
+        var fact = users.sort((x, y) => (x[field] || "").toString().localeCompare((y[field] || "").toString()))
+        document.write(JSON.stringify(fact.reverse()))
+    }       
+</script>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 align="center">select the items condition</h1>
+</head>
+
+<body>
+    <form name="myform">
+        Search: <input type="text" id="demo">
+        <button onclick="res()">click me</button>
+    </form>
+</body>
+<script>
+    function res() {
+    const list = ['orange', 'red', 'blue', 'black', 'white'];
+    let search = document.myform.demo.value;
+        const lists = list.filter((x) => {
+            return x.includes(search) 
+        });
+            document.write(lists);
+    }      
+</script>
+
+</html>
