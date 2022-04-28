@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap-select": "^1.13.18",
+    "bootstrap-select-country": "^4.2.0",
+    "bootstrap-vue": "^2.22.0",
+    "country-list": "^2.2.0",
+    "scrap": "^0.1.0",
+    "vue-router": "^4.0.14"
+  }
+}
