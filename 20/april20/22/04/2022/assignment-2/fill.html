@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>filter the values</h1>
+        <button onclick="val()">click me</button>
+    </head>
+    <body>
+        <script>
+            var values = [ { id: 20, name: 'Captain Piett' }, 
+            { id: 24, name: 'General Veers' }, 
+            { id: 56, name:'Admiral Ozzel' }, 
+            { id: 88, name: 'Commander Jerjerrod' } ];
+            function val(){
+                  var value=values.filter((x)=>{
+                      return x.name==('General Veers');
+                  })
+                  console.log(value);
+            }
+        </script>
+    </body>
+</html>

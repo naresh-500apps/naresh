@@ -1,0 +1,44 @@
+<html>
+
+<body>
+
+    <p>ErrorHandling</p>
+
+    <input id="demo" type="text">
+
+    <button type="submit" onclick="errorshandling()">Test Value</button>
+
+    <p id="sample"></p>
+
+
+    <script>
+
+        function errorshandling() {
+
+            test = val * 45;
+
+            console.log("test", val);
+
+            try {
+
+                alert("test");
+
+            }
+
+            catch (err) {
+
+                alert("Val " + err);
+
+            }
+
+            finally {
+
+                console.log("test", val);
+
+            }
+        }   
+    </script>
+
+</body>
+
+</html>

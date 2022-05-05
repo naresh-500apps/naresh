@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 align="center" size="200">invokable function in javascript functions</h1>
+        <p id="demo">this is the invokable javascript functions</p>
+        <body>
+            <script>
+                let myobject = {
+                    firstname : "mantra",
+                    lastname : "technologies",
+                    fullname : function(){
+                        return this.firstname + "" + this.lastname;
+                    }
+                }
+                document.getElementById("demo").innerHTML = myobject.fullname();    
+            </script>
+        </body>
+    </head>
+</html>
