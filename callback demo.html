@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>callback functions</h1>
+    <p id="demo"></p>
+    <script>
+        function f1() {
+            console.log("First");
+        }
+        function f2(x) {
+            console.log("Second");
+            x();
+        }
+        function f3(a, b) {
+            console.log("Third");
+            f2(f1);
+        }
+        function f4(c, d, e) {
+            console.log("Fourth");
+            f3(f1, f2);
+        }
+        f4(f1, f2, f3);
+    </script>
+</body>
+</html>

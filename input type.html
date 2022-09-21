@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>search input value1:</label>
+        <input type="search1" id="sample" name="name"><br><br>
+        <label>search input value2:</label>
+        <input type="search2" id="sample1" name="name"><br><br>
+        <button type="submit" value="submit" onclick="result()">submit</button>
+    </form>
+    <script>
+          function result(){
+              document.write(document.getElementById("sample").value + ndocument.getElementById("sample1").value);
+          }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>find the value</h1>
+        <button onclick="sol()">click me</button>
+    </head>
+</html>
+<script>
+    var values=[ { id: 20, name: 'Captain Piett' }, 
+    { id: 24, name: 'General Veers' }, 
+    { id: 56, name:'Admiral Ozzel' }, 
+    { id: 88, name: 'Commander Jerjerrod' } ];
+    function sol(){
+        var value=values.findIndex((x)=>{
+            return x.name=="General Veers";
+        })
+        console.log(value);
+    }
+</script>
